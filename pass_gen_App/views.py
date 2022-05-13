@@ -18,7 +18,7 @@ def login_submit(request):
         headers = {'content-type':'application/json'}
         data = {"email": email, "password": passwd}
         r = requests.post(url, data=json.dumps(data), headers=headers)
-        #print(r.status_code)
+        print(r.status_code)
         if r.status_code == 200:
             #api_request = json.loads(r.content)
             #print(api_request)
